@@ -11,3 +11,7 @@
     padding: 20px;
     font-family:monospace;
 }
+
+.table-responsive{
+    overflow-x:auto;
+}

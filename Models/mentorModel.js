@@ -10,8 +10,8 @@ let mentorList = new mongoose.Schema({
     required: "This field is required"
   },
   mobile: {
-    type: Number,
-    required: "This field is required"
+    type: String,
+    // required: "This field is required"
   },
   taskSummary: {
     type: String,
@@ -23,15 +23,15 @@ let mentorList = new mongoose.Schema({
   },
   assigne: {
     type: String,
-    required: "This field is required"
+    // required: "This field is required"
   },
   estimatedTime: {
     type: String,
-    required: "This field is required"
+    // required: "This field is required"
   },
   city: {
     type: String,
-    required: "This field is required"
+    // required: "This field is required"
   }
 });
 
