@@ -1,0 +1,36 @@
+<h3> <a class="btn btn-secondary" href="/mentor"><i class="fa fa-plus"></i> Create New</a> Mentor List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Task Summary</th>
+            <th>created_at</th>
+            <th>Assigne</th>
+            <th>Estimatied Time</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <body>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <th>{{this.taskSummary}}</th>
+            <th>{{this.created_at}}</th>
+            <th>{{this.assigne}}</th>
+            <th>{{this.estimatedTime}}</th>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/mentor/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/mentor/delete/{{this._id}}" onclick="return confirm(" Are you sure you want to delete this
+                    record ?")"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </body>
+</table>
