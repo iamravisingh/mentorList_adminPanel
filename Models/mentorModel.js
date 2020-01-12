@@ -27,7 +27,7 @@ let mentorList = new mongoose.Schema({
   },
   estimatedTime: {
     type: String,
-    // required: "This field is required"
+    required: "This field is required"
   },
   city: {
     type: String,

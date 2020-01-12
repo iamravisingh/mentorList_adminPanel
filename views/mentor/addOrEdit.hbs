@@ -20,37 +20,31 @@
         <label for="">Task Summary*</label>
         <textarea type="text" class="form-control" name="taskSummary" placeholder="taskSummary" value="{{mentor.taskSummary}}"></textarea>
         <div class="text-danger">
-            {{mentor.taskSummary}}
+            {{mentor.taskSummaryError}}
         </div>
     </div>
     <div class="form-group">
         <label for="">created_at*</label>
         <input type="date" class="form-control" name="created_at" placeholder="created_at" value="{{mentor.created_at}}"></input>
         <div class="text-danger">
-            {{mentor.created_at}}
+            {{mentor.created_atError}}
         </div>
     </div>
     <div class="form-group">
-        <label for="">Assigne*</label>
-        <input type="text" class="form-control" name="Assigne" placeholder="Assigne" value="{{mentor.Assigne}}"></input>
-        <div class="text-danger">
-            {{mentor.Assigne}}
-        </div>
+        <label for="">Assigne</label>
+        <input type="text" class="form-control" name="assigne" placeholder="assigne" value="{{mentor.assigne}}"></input>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="">Estimation*</label>
             <input type="date" class="form-control" name="estimatedTime" placeholder="estimatedTime" value="{{mentor.estimatedTime}}">
             <div class="text-danger">
-                {{mentor.estimatedTime}}
+                {{mentor.estimatedTimeError}}
             </div>
         </div>
         <div class="form-group col-md-6">
-            <label for="">Mobile*</label>
+            <label for="">Mobile</label>
             <input type="text" class="form-control" name="mobile" placeholder="mobile" value="{{mentor.mobile}}">
-            <div class="text-danger">
-                {{mentor.mobile}}
-            </div>
         </div>
         <div class="form-group col-md-6">
             <label for="">City</label>
