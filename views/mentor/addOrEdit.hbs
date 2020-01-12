@@ -3,35 +3,35 @@
 <form action="/mentor" method="POST" autocomplete="off">
     <input type="hidden" name="_id" value="{{mentor._id}}">
     <div class="form-group">
-        <label for="">Full Name</label>
+        <label for="">Full Name*</label>
         <input type="text" class="form-control" name="fullName" placeholder="Full Name" value="{{mentor.fullName}}">
         <div class="text-danger">
             {{mentor.fullNameError}}
         </div>
     </div>
     <div class="form-group">
-        <label for="">Email</label>
+        <label for="">Email*</label>
         <input type="text" class="form-control" name="email" placeholder="Email" value="{{mentor.email}}">
         <div class="text-danger">
             {{mentor.emailError}}
         </div>
     </div>
     <div class="form-group">
-        <label for="">Task Summary</label>
+        <label for="">Task Summary*</label>
         <textarea type="text" class="form-control" name="taskSummary" placeholder="taskSummary" value="{{mentor.taskSummary}}"></textarea>
         <div class="text-danger">
             {{mentor.taskSummary}}
         </div>
     </div>
     <div class="form-group">
-        <label for="">created_at</label>
-        <input type="text" class="form-control" name="created_at" placeholder="created_at" value="{{mentor.created_at}}"></input>
+        <label for="">created_at*</label>
+        <input type="date" class="form-control" name="created_at" placeholder="created_at" value="{{mentor.created_at}}"></input>
         <div class="text-danger">
             {{mentor.created_at}}
         </div>
     </div>
     <div class="form-group">
-        <label for="">Assigne</label>
+        <label for="">Assigne*</label>
         <input type="text" class="form-control" name="Assigne" placeholder="Assigne" value="{{mentor.Assigne}}"></input>
         <div class="text-danger">
             {{mentor.Assigne}}
@@ -39,18 +39,25 @@
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
-            <label for="">Estimation</label>
-            <input type="text" class="form-control" name="estimatedTime" placeholder="estimatedTime" value="{{mentor.estimatedTime}}">
+            <label for="">Estimation*</label>
+            <input type="date" class="form-control" name="estimatedTime" placeholder="estimatedTime" value="{{mentor.estimatedTime}}">
+            <div class="text-danger">
+                {{mentor.estimatedTime}}
+            </div>
         </div>
         <div class="form-group col-md-6">
-            <label for="">Mobile</label>
+            <label for="">Mobile*</label>
             <input type="text" class="form-control" name="mobile" placeholder="mobile" value="{{mentor.mobile}}">
+            <div class="text-danger">
+                {{mentor.mobile}}
+            </div>
         </div>
         <div class="form-group col-md-6">
             <label for="">City</label>
             <input type="text" class="form-control" name="city" placeholder="City" value="{{mentor.city}}">
         </div>
     </div>
+    <hr/>
     <div class="form-group">
         <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
         <a href="/mentor/list" class="btn btn-secondary"><i class="fa fa-list-alt"></i> View All</a>

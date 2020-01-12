@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
-require("./EmployeeModel");
-
-mongoose.connect(
-  "mongodb+srv://iamravisingh:tatabyebye@cluster0-2uaj0.mongodb.net/test",
-  { useNewUrlParser: true },
-  err => {
+require("./mentorModel");
+console.log('connercted to',process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI,{ useNewUrlParser: true },err => {
     if (!err) {
       console.log("Connection established successfully");
     } else {

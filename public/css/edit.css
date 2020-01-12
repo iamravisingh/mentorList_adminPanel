@@ -3,3 +3,13 @@
     height:100px;
     font-family:monospace;
 }
+
+.navbar > a{
+    color: white;
+}
+
+.mentorList{
+    background-color: #fff;
+    padding: 20px;
+    font-family:monospace;
+}
