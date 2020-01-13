@@ -10,8 +10,10 @@ let mentorList = new mongoose.Schema({
     required: "This field is required"
   },
   mobile: {
-    type: String,
-    // required: "This field is required"
+    type: Number,
+    min: 1000000000,
+    max: 9999999999,
+    required: "This field is required"
   },
   taskSummary: {
     type: String,
